@@ -1,58 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LM SEO Agency - Inicia sesión</title>
-    <link rel="shortcut icon" href="../assets/Logotipo_LM_SEO_Agency-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/Logotipo LM SEO Agency.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
-    <header>
-          <a href="../index.html">
-        <img src="../assets/Logotipo LM SEO Agency.png" alt="Logo LMs SEO Agency">
+<body class="pagina-login">
+    <header class="contenedor">
+        <a href="../index.html" class="logo-container">
+            <img src="../assets/Logotipo LM SEO Agency.png" alt="Logo LM SEO Agency">
         </a>
         <nav>
             <ul>
-                <li>
-                    <a href="../pages/precios.html"> Precios</a>
-                </li>
-                <li>
-                    <a href="../pages/testimonios.html">Testimonios</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/iniciar-seccion.html">Inicia Sesión</a>
-                </li>
+                <li><a href="./precios.html">Precios</a></li>
+                <li><a href="./testimonios.html">Testimonios</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./iniciar-sesion.html">Inicia Sesión</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-    <form>
-        <section>
-        <label>Email</label>
-        <input type="email" placeholder="saralopez@corporativo.com">
-        </section>
-        <section>
-        <label>Contraseña</label>
-        <input type="password" placeholder="">
-        </section>
-        <section>
-        <button type="submit">Inicie sesión aquí</button>
-        </section>
-    </form>
+    <main class="contenedor">
+        <form class="form-container">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="saralopez@corporativo.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password">
+            </div>
+            <button type="submit" class="boton">Inicie sesión aquí</button>
+        </form>
     </main>
-    <footer>
-        <h3>© 2025 LM SEO Agency. Todos los derechos reservados.</h3>
-        <img class="social" src="../assets/icono-logotipo-vector-instagram-logotipo-redes-sociales_901408-392-removebg-preview.png" alt="Instagram">
-        <img class="social" src="../assets/tiktok-removebg-preview.png" alt="tiktok">
-        <img class="social" src="../assets/facebook-removebg-preview.png" alt="facebook">
-        <img class="social" src="../assets/Whatsapp-removebg-preview.png" alt="">
-    </footer>
+    <footer class="contenedor footer-global">
+  <div class="copyright">
+    <h3>© 2025 LM SEO Agency. Todos los derechos reservados.</h3>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Prensa</a>
+    <a href="#">Ver servicios</a>
+    <a href="#">Testimonios</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img class="social" src="../assets/icono-logotipo-vector-instagram-logotipo-redes-sociales_901408-392-removebg-preview.png" alt="Instagram"></a>
+    <a href="#"><img class="social" src="../assets/tiktok-removebg-preview.png" alt="TikTok"></a>
+    <a href="#"><img class="social" src="../assets/facebook-removebg-preview.png" alt="Facebook"></a>
+    <a href="#"><img class="social" src="../assets/Whatsapp-removebg-preview.png" alt="WhatsApp"></a>
+  </div>
+</footer>
+</footer>
 </body>
 </html>
