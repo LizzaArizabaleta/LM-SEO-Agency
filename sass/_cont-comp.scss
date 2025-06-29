@@ -1,0 +1,49 @@
+@use "variables" as*;
+@use 'mixins';
+
+.contenedor {
+  max-width: $ancho-maximo;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titulo-principal {
+  font-size: 2em;
+  margin: 40px 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: $color-primario;
+  color: $color-fondo;
+  border: none;
+  border-radius: $radio-borde;
+  font-family: $color-primario;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0;
+  margin-right: auto;
+  &:hover {
+    background-color: $color-gris-1;
+  }
+}
+
+.boton-primario {
+  @include mixins.crear-boton($color-primario, $color-fondo);
+
+  &:hover {
+    background-color: $color-gris-1;
+  }
+}
+
+.boton-secundario {
+  @include mixins.crear-boton($color-gris-2, $color-fondo);
+
+  &:hover {
+    background-color: $color-primario;
+  }
+}

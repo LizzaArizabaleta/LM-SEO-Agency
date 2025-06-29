@@ -1,0 +1,31 @@
+@use "variables" as*;
+
+body {
+  font-family: $fuente-principal;
+  color: $color-primario;
+  background-color: $color-fondo;
+  line-height: 1.6;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: $color-primario;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}

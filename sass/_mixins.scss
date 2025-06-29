@@ -1,0 +1,14 @@
+@use 'variables' as *; 
+
+@mixin crear-boton($bg-color, $text-color) {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $radio-borde;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

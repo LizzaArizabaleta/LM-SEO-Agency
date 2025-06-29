@@ -149,7 +149,28 @@ nav a:hover {
 .social-icons img.social {
   width: 30px;
   height: 30px;
+  transition: transform 0.2s ease-in-out; /* Para una pequeña respuesta al hover */
 }
+
+.social-icons img.social:hover {
+  animation: vibrate 0.3s infinite alternate; /* Aplica la animación al hacer hover */
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 footer .footer-links a:hover {
   color: #666;

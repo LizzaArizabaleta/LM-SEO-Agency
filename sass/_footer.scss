@@ -1,0 +1,61 @@
+@use "variables" as*;
+
+.footer-global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid $color-acento-claro;
+  text-align: center;
+
+  p {
+    font-weight: bold;
+  }
+
+  .footer-links {
+    a {
+      display: block;
+      margin: 5px 0;
+      color: $color-primario;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-gris-2;
+        text-decoration: underline;
+      }
+    }
+  }
+
+ .social-icons {
+  display: flex;
+  gap: 15px;
+
+  img.social {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      animation: vibrate 0.3s infinite alternate;
+    }
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+}
