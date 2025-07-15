@@ -1,4 +1,5 @@
 @use "variables" as*;
+@use "mixins" ;
 
 header {
   .contenedor {
@@ -11,7 +12,13 @@ header {
   .logo-container img {
     max-width: 80px;
   }
-}
+  @include mixins.breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+
 
 nav {
   ul {
