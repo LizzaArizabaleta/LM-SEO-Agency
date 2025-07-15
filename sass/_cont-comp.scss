@@ -1,11 +1,5 @@
 @use "variables" as*;
-@use 'mixins';
-
-.contenedor {
-  max-width: $ancho-maximo;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+@use "mixins";
 
 
 .titulo-principal {
@@ -13,38 +7,44 @@
   margin: 40px 0;
 }
 
-.boton {
+%boton-base {
   display: inline-block;
   padding: 15px 25px;
-  background-color: $color-primario;
-  color: $color-fondo;
+  color: #ffffff;
   border: none;
-  border-radius: $radio-borde;
-  font-family: $color-primario;
-  font-size: 1.1em;
+  border-radius: 8px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.boton {
+  @extend %boton-base;
+  background-color: #333;
+  font-size: 1.1em;
   margin-left: 0;
   margin-right: auto;
+
   &:hover {
-    background-color: $color-gris-1;
+    background-color: #555;
   }
 }
 
 .boton-primario {
-  @include mixins.crear-boton($color-primario, $color-fondo);
+  @extend %boton-base;
+  background-color: #333;
 
   &:hover {
-    background-color: $color-gris-1;
+    background-color: #555;
   }
 }
 
 .boton-secundario {
-  @include mixins.crear-boton($color-gris-2, $color-fondo);
+  @extend %boton-base;
+  background-color: #666;
 
   &:hover {
-    background-color: $color-primario;
+    background-color: #333;
   }
 }

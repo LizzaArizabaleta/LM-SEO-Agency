@@ -1,35 +1,37 @@
 @use "variables" as*;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, a, li, label, input, button, textarea {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 body {
-  font-family: $fuente-principal;
-  color: $color-primario;
-  background-color: $color-fondo;
+  color: #333;
+  background-color: #ffffff;
   line-height: 1.6;
-}
 
-main {
-  min-height: 70vh;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: $color-primario;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-  text-align: center;
-}
-
-h1 {
-  font-size: 1.5rem;
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
 }
